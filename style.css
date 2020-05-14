@@ -1,14 +1,40 @@
 body {
-
     margin: 0;
     padding: 0;
-    background: black; /* definir cor mais tarde */
-    color: white;
+    background: #EAFFDA; /* definir cor mais tarde */
 }
 
 #cabecalho {
-    background: orange;
-    transform: translateY(0);
+    position: fixed;
+    background: #071013;
+    color: #A49966;
+    width: 100%;
+    height: 40px;
+}
+
+.caixa-busca {
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    left: 75%;
+    top: 5%;
+    background: white;
+    height: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn-busca {
+    float: right;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    margin: 5px;
+}
+
+#barra-nav {
+    background-color: orangered;
+    position: relative;
 }
 
 #menu{
@@ -20,32 +46,16 @@ body {
 
 #menu li {
     display: inline;
-    padding: 15px;
+    padding: 0;
+    margin: 10px;
 }
 #menu li a {
     text-decoration: none;
+    color: #071013;
+    padding: 10px;
 }
 #menu li a:hover{
-    color: gray;
+    color: white;
+    background-color: #A49966;
 }
 
-.caixa-busca {
-
-    position: absolute;
-    left: 75%;
-    top: 5%;
-    background: yellow;  /* definir cor mais tarde */
-    height: 10px;
-    border-radius: 40px;
-    padding: 10px;
-
-}
-
-.btn-busca {
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: red; ; /* definir cor mais tarde */
-    display: flex;
-}
